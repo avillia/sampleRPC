@@ -1,0 +1,42 @@
+POST http://localhost:3000/rpc
+Content-Type: application/json
+
+{"jsonrpc":"2.0","method":"fibonacci","params":[25],"id":1}
+
+###
+POST http://localhost:3000/rpc
+Content-Type: application/json
+
+{"jsonrpc":"2.0","method":"fibonacci","params":[50],"id":2}
+
+###
+POST http://localhost:3000/rpc
+Content-Type: application/json
+
+{"jsonrpc":"2.0","method":"fibonacci","params":[10, 200, 3000],"id":3}
+
+###
+POST http://localhost:3000/rpc
+Content-Type: application/json
+
+{"jsonrpc":"2.0","method":"fibonacci","params": {"count": 100},"id":3}
+
+###
+POST http://localhost:3000/rpc/
+Content-Type: application/json
+
+{"jsonrpc":"2.0","method":"primes","params":[20],"id":4}
+
+###
+POST http://localhost:3000/rpc/
+Content-Type: application/json
+
+{"jsonrpc":"2.0","method":"primes","params":[50],"id":5}
+
+###
+POST http://localhost:3000/rpc/
+Content-Type: application/json
+
+{"jsonrpc":"2.0","method":"primes","params":[100],"id":6}
+
+###
